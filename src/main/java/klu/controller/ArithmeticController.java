@@ -13,12 +13,11 @@ public class ArithmeticController {
 	@GetMapping("/add/{A}/{B}")
 	public String add(@PathVariable("A") int a,@PathVariable("B") int b)
 	{
-		return "Addition = " + (a+b);
+		return "" + (a+b);
+	}
+	@GetMapping("/sub/{A}/{B}")
+	public String add(@PathVariable("A") int a,@PathVariable("B") int b)
+	{
+		return " " + (a-b);
 	}
 }
-
-
-
-//git remote add origin https://github.com/Reethika-Muppidi/calc.git
-//git branch -M main
-//git push -u origin main
